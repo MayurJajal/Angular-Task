@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="card-header">
+      <h2>Angular Accordion</h2>
+  </div>
+  
+  <div class="card-body">
+  <accordion>
+    <panel myTitle="First Panel">
+      This is First Content
+    </panel>
+    <panel myTitle="Second Panel">
+      This is Second Content
+    </panel>
+    <panel [myTitle]="u.myTitle" *ngFor="let u of FAQsList">
+      {{u.myContent}}
+    </panel>
+  </accordion>
+  </div>
+  <div class="card-footer">
+      <div class="row">
+        @Powered by Angular.io 
+      </div>
+    </div>
+</div>
